@@ -11,6 +11,7 @@ export const SectionCard = ({
     title: string;
     link: string;
     backgroundColor: string;
+    icon: React.ReactNode;
   }[];
   className?: string;
 }) => {
@@ -49,7 +50,7 @@ export const SectionCard = ({
               />
             )}
           </AnimatePresence>
-          <Card backgroundColor={item.backgroundColor}>
+          <Card backgroundColor={item.backgroundColor} icon={item.icon}>
             <CardTitle>{item.title}</CardTitle>
           </Card>
         </Link>
@@ -62,10 +63,12 @@ export const Card = ({
   className,
   children,
   backgroundColor,
+  icon,
 }: {
   className?: string;
   children: React.ReactNode;
   backgroundColor: string;
+  icon: React.ReactNode;
 }) => {
   return (
     <div
@@ -76,7 +79,10 @@ export const Card = ({
       style={{ background: 'transparent' }}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-4">
+          {icon}
+          {children}
+        </div>
       </div>
       <div
         className="absolute inset-0 transition-all duration-200 opacity-0 group-hover:opacity-50"

@@ -6,6 +6,9 @@ import LinkedInLogo from "./ui/icons/LinkedInLogo";
 import Navbar from "./ui/navbar";
 import { SectionCard } from "./ui/section-card";
 import { red } from "tailwindcss/colors";
+import ExperienceIcon from "./ui/icons/ExperienceIcon";
+import ProjectsIcon from "./ui/icons/ProjectsIcon";
+import AboutMeIcon from "./ui/icons/AboutMeIcon";
 
 export function HomePage() {
 return (
@@ -71,17 +74,20 @@ export const projects = [
     title: "Experiencia",
     link: "/experiencia",
     backgroundColor: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    icon: <ExperienceIcon />,
   },
   {
     title: "Proyectos",
     link: "/proyectos",
-    backgroundColor: 'radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
+    backgroundColor: 'linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
+    icon: <ProjectsIcon />,
   },
   {
     title: "Sobre mí",
     link: "/sobre-mi",
-    backgroundColor: 'linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)',
-  },
+    backgroundColor: 'linear-gradient(90deg, rgba(85,37,130,1) 0%, rgba(0,128,128,1) 100%)',
+    icon: <AboutMeIcon />,
+  }
 ];
 
 export default HomePage;
