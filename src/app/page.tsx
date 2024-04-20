@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "./ui/hero";
+import { Highlight } from "./ui/hero";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import LinkedInLogo from "./ui/icons/LinkedInLogo";
 import Navbar from "./ui/navbar";
