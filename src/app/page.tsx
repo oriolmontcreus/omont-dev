@@ -4,13 +4,12 @@ import { HeroHighlight, Highlight } from "./ui/hero";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import LinkedInLogo from "./ui/icons/LinkedInLogo";
 import Navbar from "./ui/navbar";
+import { SectionCard } from "./ui/section-card";
+import { red } from "tailwindcss/colors";
 
 export function HomePage() {
 return (
   <div className="relative flex flex-col items-center justify-center h-screen dark max-w-2xl mx-auto">
-    <div className="absolute top-0 w-full z-50">
-      <Navbar />
-    </div>
     <div className="w-full flex flex-row justify-start items-center mt-4">
       <motion.h1
         initial={{
@@ -27,7 +26,7 @@ return (
         }}
       className="text-2xl px-4 md:text-4xl lg:text-1xl font-bold text-neutral-700 dark:text-white max-w-2xl leading-relaxed lg:leading-snug text-center mx-auto whitespace-nowrap"
       >
-      Hey,
+      ¡Hola!
       soy{" "}
       <Highlight className="text-black dark:text-white">
         Oriol Mont
@@ -62,9 +61,27 @@ return (
         </div>
       </motion.div>
     </div>
-    <div className="w-full h-64 bg-red-500 mt-4"></div>
+    <SectionCard items={projects} />
   </div>
 );
 }
+
+export const projects = [
+  {
+    title: "Experiencia",
+    link: "/experiencia",
+    backgroundColor: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  },
+  {
+    title: "Proyectos",
+    link: "/proyectos",
+    backgroundColor: 'radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
+  },
+  {
+    title: "Sobre mí",
+    link: "/sobre-mi",
+    backgroundColor: 'linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)',
+  },
+];
 
 export default HomePage;
