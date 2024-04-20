@@ -76,7 +76,6 @@ export const Card = ({
         "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 transition-all duration-200",
         className
       )}
-      style={{ background: 'transparent' }}
     >
       <div className="relative z-50">
         <div className="p-4">
