@@ -3,11 +3,13 @@ import ExperienceItem from "../ui/experience-item";
 
 const EXPERIENCES = [
   {
-    date: "Actualmente...",
-    title: "Desarrollador web − IronTech",
+    date: "Actualmente",
+    title: "Desarrollador FullStack - Irontech",
     description:
       "Responsable de la creación y actualización de herramientas web internas, mejorando la eficiencia y productividad de la empresa. Mis tareas incluyen el diseño y desarrollo de interfaces de usuario, la implementación de nuevas funcionalidades y la resolución de problemas técnicos para garantizar un rendimiento óptimo.",
-  }
+    imageUrl: "/ExperienceLogos/irontech-whitebg.webp",
+  },
+
 ];
 
 export function ExperiencePage() {
