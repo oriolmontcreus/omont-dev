@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import NavigationIcon from './icons/NavigationIcon';
@@ -10,7 +11,7 @@ type LinkItem = {
 };
 
 const linkItems: LinkItem[] = [
-  { name: 'Experiencia', url: '/experience' },
+  { name: 'Experiencia', url: '/experiencia' },
   { name: 'Proyectos', url: '/projects' },
   { name: 'Sobre mí', url: '/about' },
 ];
@@ -18,6 +19,7 @@ const linkItems: LinkItem[] = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const path = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -57,7 +59,7 @@ const Navbar = () => {
           {linkItems.map((item) => (
             <Link key={item.name} href={item.url}>
               <motion.div
-                className="cursor-pointer inline-block text-white px-4 py-2 rounded-full border-2 border-transparent hover:text-gray-200 hover:border-gray-200 transition-all duration-200 ease-in-out"
+                className={`cursor-pointer inline-block px-4 py-2 rounded-full border-2 border-transparent transition-all duration-200 ease-in-out ${path === item.url ? 'text-blue-500 hover:border-white' : 'text-white hover:text-gray-200  hover:border-white'}`}
                 variants={linkVariants}
                 initial="initial"
                 whileHover="hover"
