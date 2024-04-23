@@ -53,11 +53,11 @@ const Navbar = () => {
             {!isOpen && <NavigationIcon />}
           </button>
         </div>
-        <div className={`flex flex-col md:flex-row ${isOpen ? 'block' : 'hidden'} md:block`}>
+        <div className={`flex flex-col space-y-4 md:flex-row md:space-x-4 ${isOpen ? 'block' : 'hidden'} md:block`}>
           {linkItems.map((item) => (
             <Link key={item.name} href={item.url}>
               <motion.div
-                className="cursor-pointer block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-200 md:mx-6 px-4 py-2 rounded-full border-2 border-transparent hover:border-gray-200 transition-all duration-200 ease-in-out"
+                className="cursor-pointer inline-block text-white px-4 py-2 rounded-full border-2 border-transparent hover:text-gray-200 hover:border-gray-200 transition-all duration-200 ease-in-out"
                 variants={linkVariants}
                 initial="initial"
                 whileHover="hover"
