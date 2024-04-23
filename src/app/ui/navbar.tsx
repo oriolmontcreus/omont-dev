@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import NavigationIcon from './icons/NavigationIcon';
@@ -17,6 +17,19 @@ const linkItems: LinkItem[] = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const linkVariants = {
     initial: { backgroundColor: 'transparent' },
@@ -25,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 bg-opacity-80 border border-gray-700 px-4 py-2 mt-4 rounded-2xl max-w-[42em] w-auto mx-auto z-50 relative">
-      {isOpen && (
+      {isOpen && isMobile && (
         <button
           type="button"
           className="absolute -top-2 -right-2 text-white hover:text-gray-200 focus:text-gray-200 focus:outline-none z-20"
