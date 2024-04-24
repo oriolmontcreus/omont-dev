@@ -1,24 +1,62 @@
 "use client"
+import { ReactNode } from "react";
 import Navbar from "../ui/navbar";
-import AboutMeIcon from "../ui/icons/AboutMeIcon";
 import { CardItem, CardBody, CardContainer } from "./ui/3d-card";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+import AboutMeIcon from "../ui/icons/AboutMeIcon";
 import LinkedInIcon from "../ui/icons/LinkedInLogo";
 import GitHubIcon from "../ui/icons/GithubIcon";
-import { motion } from "framer-motion";
 import MailIcon from "../ui/icons/MailIcon";
 
 const buttonVariants = {
-  hover: {
-    scale: 1.2,
-    transition: {
-      duration: 0.3,
-    },
-  },
-  rest: {
-    scale: 1,
-  },
+  rest: { scale: 1 },
+  hover: { scale: 1.1 },
 };
+
+interface LinkButtonProps {
+  href: string;
+  children: ReactNode;
+  className?: string;
+}
+
+interface EmailContactProps {
+  email: string;
+}
+
+function LinkButton({ href, children, className }: LinkButtonProps) {
+  return (
+    <CardItem
+      as={motion.a}
+      variants={buttonVariants}
+      whileHover="hover"
+      initial="rest"
+      translateZ={20}
+      href={href}
+      target="__blank"
+      className={`px-4 py-2 rounded-xl text-xs border-2 transition-colors duration-300 ${className}`}
+    >
+      {children}
+    </CardItem>
+  );
+}
+
+function EmailContact({ email }: EmailContactProps) {
+  return (
+    <div className="mt-4 p-2 border border-gray-300 dark:border-gray-700 rounded-md bg-gray-100 dark:bg-gray-800 flex items-center">
+      <p className="text-neutral-500 text-sm dark:text-neutral-300 mr-2 flex-grow">
+        <a href={`mailto:${email}`}>{email}</a>
+      </p>
+      <LinkButton
+        href={`mailto:${email}`}
+        className="bg-black dark:bg-white dark:text-black text-white font-bold hover:bg-gray-800 border-black hover:border-gray-800 flex items-center justify-center"
+      >
+        <MailIcon />
+      </LinkButton>
+    </div>
+  );
+}
 
 export function ExperiencePage() {
   return (
@@ -54,47 +92,14 @@ export function ExperiencePage() {
             </CardItem>
           </CardItem>
           <div className="flex justify-center items-center w-full mt-10 gap-5">
-            <CardItem
-              as={motion.a}
-              variants={buttonVariants}
-              whileHover="hover"
-              initial="rest"
-              translateZ={20}
-              href="https://www.linkedin.com/in/oriol-mont-creus/"
-              target="__blank"
-              className="px-4 py-2 rounded-xl text-xs border-2 hover:bg-gray-900 hover:border-gray-900 transition-colors duration-300"
-            >
+            <LinkButton href="https://www.linkedin.com/in/oriol-mont-creus/" className="hover:bg-gray-900 hover:border-gray-900">
               <LinkedInIcon /> LinkedIn
-            </CardItem>
-            <CardItem
-              as={motion.a}
-              variants={buttonVariants}
-              whileHover="hover"
-              initial="rest"
-              translateZ={20}
-              href="https://github.com/oriolmontcreus"
-              target="__blank"
-              className="px-4 py-2 rounded-xl text-xs border-2 hover:bg-gray-800 hover:border-gray-800 transition-colors duration-300"
-            >
+            </LinkButton>
+            <LinkButton href="https://github.com/oriolmontcreus" className="hover:bg-gray-800 hover:border-gray-800">
               <GitHubIcon /> GitHub
-            </CardItem>
+            </LinkButton>
           </div>
-          <div className="mt-4 p-2 border border-gray-300 dark:border-gray-700 rounded-md bg-gray-100 dark:bg-gray-800 flex items-center">
-            <p className="text-neutral-500 text-sm dark:text-neutral-300 mr-2 flex-grow">
-              <a href="mailto:oriolmontcreus@gmail.com">oriolmontcreus@gmail.com</a>
-            </p>
-            <CardItem
-              as={motion.a}
-              variants={buttonVariants}
-              whileHover="hover"
-              initial="rest"
-              translateZ={20}
-              href="mailto:oriolmontcreus@gmail.com"
-              className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:bg-gray-800 border-black hover:border-gray-800 transition-colors duration-300 flex items-center justify-center"
-            >
-              <MailIcon />
-            </CardItem>
-          </div>
+          <EmailContact email="oriolmontcreus@gmail.com" />
         </CardBody>
       </CardContainer>
     </section>
