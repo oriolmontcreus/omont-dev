@@ -1,7 +1,6 @@
 "use client";
 
-import { cn } from "../../../utils/cn";
-import Image from "next/image";
+import { cn } from "../../../../utils/cn";
 import React, {
   createContext,
   useState,
@@ -49,7 +48,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "py-20 px-20 flex items-center justify-center",
           containerClassName
         )}
         style={{
@@ -62,7 +61,7 @@ export const CardContainer = ({
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
+            "flex items-center justify-center relative transition-all duration-200 ease-linear max-w-80",
             className
           )}
           style={{

@@ -70,11 +70,11 @@ const OTHER_EXPERIENCES = [
 
 export function ExperiencePage() {
   return (
-    <section id="experience" data-section="experience" className="relative flex flex-col h-screen dark max-w-2xl mx-auto pt-40">
+    <section id="experiencia" data-section="experiencia" className="relative flex flex-col h-screen dark max-w-2xl mx-auto pt-40">
       <div style={{ position: 'fixed', top: '20px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }}>
         <Navbar/>
       </div>
-      <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+      <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white ml-4">
         <ExperienceIcon />
         Experiencia laboral
       </h2>
