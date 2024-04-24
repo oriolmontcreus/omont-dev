@@ -12,8 +12,8 @@ type LinkItem = {
 
 const linkItems: LinkItem[] = [
   { name: 'Experiencia', url: '/experiencia' },
-  { name: 'Proyectos', url: '/projects' },
-  { name: 'Sobre mí', url: '/about' },
+  { name: 'Proyectos', url: '/proyectos' },
+  { name: 'Sobre mí', url: '/sobre-mi' },
 ];
 
 const Navbar = () => {
