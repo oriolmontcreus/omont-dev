@@ -60,7 +60,8 @@ function EmailContact({ email }: EmailContactProps) {
 
 export function ExperiencePage() {
   return (
-    <section id="sobre-mi" data-section="sobre-mi" className="relative flex flex-col h-screen dark max-w-2xl mx-auto pt-40">
+    <div>
+      <section id="sobre-mi" data-section="sobre-mi" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto pt-40">
       <div style={{ position: 'fixed', top: '20px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }}>
         <Navbar />
       </div>
@@ -118,6 +119,18 @@ export function ExperiencePage() {
       </div>
       </div>
     </section>
+      <section id="technologies" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto pt-40 p-4">
+        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
+        Tecnologías que manejo
+        </h2>
+        <img src="https://skillicons.dev/icons?i=html,css,angular,bootstrap,tailwind,jquery,js,ts,cs,py,php,laravel,nodejs,express,docker,git,npm,mysql,mongodb,postgres&perline=10" alt="Technologies" />
+
+        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white mt-10">
+          Herramientas y misceláneos con los que estoy familiarizado
+        </h2>
+        <img src="https://skillicons.dev/icons?i=vscode,visualstudio,figma,bash,powershell,codepen,linux,debian,ubuntu,windows,github,md,notion,postman,stackoverflow,svg,webflow&perline=10" alt="Tools / Misc I'm familiar with" />
+      </section>
+      </div>
   );
 }
 
