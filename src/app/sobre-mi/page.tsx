@@ -123,12 +123,12 @@ export function ExperiencePage() {
         <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
         Tecnologías que manejo
         </h2>
-        <img src="https://skillicons.dev/icons?i=html,css,angular,bootstrap,tailwind,jquery,js,ts,cs,py,php,laravel,nodejs,express,docker,git,npm,mysql,mongodb,postgres&perline=10" alt="Technologies" />
+        <img src="https://skillicons.dev/icons?i=html,css,angular,bootstrap,tailwind,jquery,js,ts,cs,py,php,laravel,nodejs,express,docker,git,npm,mysql,mongodb,postgres&perline=10" alt="technologies-icons" />
 
         <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white mt-10">
           Herramientas y misceláneos con los que estoy familiarizado
         </h2>
-        <img src="https://skillicons.dev/icons?i=vscode,visualstudio,figma,bash,powershell,codepen,linux,debian,ubuntu,windows,github,md,notion,postman,stackoverflow,svg,webflow&perline=10" alt="Tools / Misc I'm familiar with" />
+        <img src="https://skillicons.dev/icons?i=vscode,visualstudio,figma,bash,powershell,codepen,linux,debian,ubuntu,windows,github,md,notion,postman,stackoverflow,svg,webflow&perline=10" alt="tools-icons" />
       </section>
       </div>
   );
