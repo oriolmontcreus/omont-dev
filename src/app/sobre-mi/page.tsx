@@ -26,6 +26,11 @@ interface EmailContactProps {
 }
 
 function LinkButton({ href, children, className }: LinkButtonProps) {
+  const handleClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+    window.open(href, '__blank');
+  };
+
   return (
     <CardItem
       as={motion.a}
@@ -34,7 +39,7 @@ function LinkButton({ href, children, className }: LinkButtonProps) {
       initial="rest"
       translateZ={20}
       href={href}
-      target="__blank"
+      onClick={handleClick}
       className={`px-4 py-2 rounded-xl text-xs border-2 transition-colors duration-300 ${className}`}
     >
       {children}
@@ -48,16 +53,17 @@ function EmailContact({ email }: EmailContactProps) {
       <p className="text-neutral-500 text-sm dark:text-neutral-300 mr-2 flex-grow">
         <p>{email}</p>
       </p>
-      <LinkButton
-        href={`mailto:${email}`}
-        className="bg-black dark:bg-white dark:text-black text-white font-bold hover:bg-gray-800 border-black hover:border-gray-800 flex items-center justify-center"
-      >
-        <MailIcon />
-      </LinkButton>
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <LinkButton
+          href={`mailto:${email}`}
+          className="bg-black dark:bg-white dark:text-black text-white font-bold hover:bg-gray-800 border-black hover:border-gray-800 flex items-center justify-center"
+        >
+          <MailIcon />
+        </LinkButton>
+      </div>
     </div>
   );
 }
-
 export function ExperiencePage() {
   return (
     <div>
@@ -119,7 +125,7 @@ export function ExperiencePage() {
       </div>
       </div>
     </section>
-      <section id="technologies" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto pt-40 p-4">
+      <section id="technologies" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto mt-40 p-4">
         <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
         Tecnologías que manejo
         </h2>
