@@ -17,18 +17,30 @@ export function ProyectosPage() {
                 </h2>
                 <div className="flex flex-wrap justify-center gap-4">
                     <ProjectCard
-                        image="https://via.placeholder.com/150"
-                        title="Project 1"
-                        description="This is a description for Project 1."
-                        githubUrl="https://github.com/user/project1"
-                        previewUrl="https://project1.com"
+                        image="/projects/vistaqs.webp"
+                        title="VistaQs"
+                        description="Fullstack web application for managing surveys."
+                        githubUrl="https://github.com/oriolmontcreus/vistaQS"
                     />
                     <ProjectCard
-                        image="https://via.placeholder.com/150"
-                        title="Project 2"
-                        description="This is a description for Project 2."
-                        githubUrl="https://github.com/user/project2"
-                        previewUrl="https://project2.com"
+                        image="/projects/sound-sanbox.webp"
+                        title="Sound Playground"
+                        description="Simple drumpad, channel rack and sound upload."
+                        githubUrl="https://github.com/oriolmontcreus/vanilla-audio-sandbox"
+                        previewUrl="https://oriolmontcreus.github.io/vanilla-audio-sandbox/"
+                    />
+                    <ProjectCard
+                        image="/projects/vscode-extension.webp"
+                        title="Code Extension"
+                        description="Basic VS Code image path manager extension."
+                        githubUrl="https://github.com/oriolmontcreus/imagepatheditor-vsce"
+                    />
+                    <ProjectCard
+                        image="/projects/dragndrop.webp"
+                        title="Drag&Drop Sort"
+                        description="Basic VS Code image path manager extension."
+                        githubUrl="https://github.com/oriolmontcreus/simple-dragNdrop"
+                        previewUrl="https://oriolmontcreus.github.io/simple-dragNdrop/"
                     />
                 </div>
             </section>

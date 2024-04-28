@@ -9,15 +9,18 @@ const buttonVariants = {
 };
 
 interface IconButtonProps {
-    href: string;
+    href?: string;
     children: ReactNode;
     className?: string;
+    disabled?: boolean;
 }
 
-function IconButton({ href, children, className }: IconButtonProps) {
+function IconButton({ href, children, className, disabled }: IconButtonProps) {
     const handleClick = (event: React.MouseEvent) => {
         event.preventDefault();
-        window.open(href, '__blank');
+        if (href) {
+            window.open(href, '__blank');
+        }
     };
 
     return (
@@ -28,9 +31,9 @@ function IconButton({ href, children, className }: IconButtonProps) {
             whileHover="hover"
             initial="rest"
             translateZ={20}
-            href={href}
+            href={href || '#'}
             onClick={handleClick}
-            className={`px-4 py-2 rounded-xl text-xs border-2 transition-colors duration-300 ${className}`}
+            className={`px-4 py-2 rounded-xl text-xs border-2 transition-colors duration-300 ${className} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
             {children}
         </CardItem>
