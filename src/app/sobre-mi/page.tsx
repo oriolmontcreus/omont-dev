@@ -1,50 +1,16 @@
 "use client"
-import { ReactNode } from "react";
 import Navbar from "../ui/navbar";
 import { CardItem, CardBody, CardContainer } from "./ui/3d-card";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import IconButton from "../ui/IconButton";
 
 import AboutMeIcon from "../ui/icons/AboutMeIcon";
 import LinkedInIcon from "../ui/icons/LinkedInLogo";
 import GitHubIcon from "../ui/icons/GithubIcon";
 import MailIcon from "../ui/icons/MailIcon";
 
-const buttonVariants = {
-  rest: { scale: 1 },
-  hover: { scale: 1.1 },
-};
-
-interface LinkButtonProps {
-  href: string;
-  children: ReactNode;
-  className?: string;
-}
-
 interface EmailContactProps {
   email: string;
-}
-
-function LinkButton({ href, children, className }: LinkButtonProps) {
-  const handleClick = (event: React.MouseEvent) => {
-    event.preventDefault();
-    window.open(href, '__blank');
-  };
-
-  return (
-    <CardItem
-      as={motion.a}
-      variants={buttonVariants}
-      whileHover="hover"
-      initial="rest"
-      translateZ={20}
-      href={href}
-      onClick={handleClick}
-      className={`px-4 py-2 rounded-xl text-xs border-2 transition-colors duration-300 ${className}`}
-    >
-      {children}
-    </CardItem>
-  );
 }
 
 function EmailContact({ email }: EmailContactProps) {
@@ -54,16 +20,17 @@ function EmailContact({ email }: EmailContactProps) {
         <p>{email}</p>
       </p>
       <div style={{ position: 'relative', zIndex: 1 }}>
-        <LinkButton
+        <IconButton
           href={`mailto:${email}`}
           className="bg-black dark:bg-white dark:text-black text-white font-bold hover:bg-gray-800 border-black hover:border-gray-800 flex items-center justify-center"
         >
           <MailIcon />
-        </LinkButton>
+        </IconButton>
       </div>
     </div>
   );
 }
+
 export function ExperiencePage() {
   return (
     <div>
@@ -77,7 +44,7 @@ export function ExperiencePage() {
       </h2>
 
       <div className="flex flex-col md:flex-row justify-between items-start">
-        <div className="w-full md:w-1/2 p-4">
+        <div className="w-full md:w-1/2 p-4 pt-0">
           <div className="space-y-4">
             <p className="leading-relaxed">
               Mi nombre es <strong className="text-yellow-500"> Oriol Mont</strong>, un joven de 19 años originario de Girona. Soy un <strong className="text-yellow-500">Desarrollador FullStack</strong> y en la actualidad, estoy ampliando mis habilidades técnicas aprendiendo nuevos frameworks web, incluyendo <strong className="text-yellow-500">Angular, Laravel, Astro y Blazor</strong>.
@@ -112,12 +79,12 @@ export function ExperiencePage() {
               </CardItem>
             </CardItem>
             <div className="flex justify-center items-center w-full mt-10 gap-5">
-              <LinkButton href="https://www.linkedin.com/in/oriol-mont-creus/" className="hover:bg-gray-900 hover:border-gray-900">
+              <IconButton href="https://www.linkedin.com/in/oriol-mont-creus/" className="hover:bg-gray-900 hover:border-gray-900">
                 <LinkedInIcon /> LinkedIn
-              </LinkButton>
-              <LinkButton href="https://github.com/oriolmontcreus" className="hover:bg-gray-800 hover:border-gray-800">
+              </IconButton>
+              <IconButton href="https://github.com/oriolmontcreus" className="hover:bg-gray-800 hover:border-gray-800">
                 <GitHubIcon /> GitHub
-              </LinkButton>
+              </IconButton>
             </div>
             <EmailContact email="oriolmontcreus@gmail.com" />
           </CardBody>
