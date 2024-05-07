@@ -2,8 +2,8 @@
 import Navbar from "../ui/navbar";
 import ProjectCard from "./ui/ProjectCard";
 import { motion } from "framer-motion";
-
 import ProjectsIcon from "../ui/icons/ProjectsIcon";
+import { projectsData } from './content';
 
 const cardVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -28,32 +28,16 @@ export function ProyectosPage() {
                         animate="visible"
                         variants={cardVariants}
                     >
-                        <ProjectCard
-                            image="/projects/vistaqs.webp"
-                            title="VistaQs"
-                            description="Fullstack web application for managing surveys."
-                            githubUrl="https://github.com/oriolmontcreus/vistaQS"
-                        />
-                        <ProjectCard
-                            image="/projects/sound-sanbox.webp"
-                            title="Sound Playground"
-                            description="Simple drumpad, channel rack and sound upload."
-                            githubUrl="https://github.com/oriolmontcreus/vanilla-audio-sandbox"
-                            previewUrl="https://oriolmontcreus.github.io/vanilla-audio-sandbox/"
-                        />
-                        <ProjectCard
-                            image="/projects/vscode-extension.webp"
-                            title="Code Extension"
-                            description="Basic VS Code image path manager extension."
-                            githubUrl="https://github.com/oriolmontcreus/imagepatheditor-vsce"
-                        />
-                        <ProjectCard
-                            image="/projects/dragndrop.webp"
-                            title="Drag&Drop Sort"
-                            description="Basic VS Code image path manager extension."
-                            githubUrl="https://github.com/oriolmontcreus/simple-dragNdrop"
-                            previewUrl="https://oriolmontcreus.github.io/simple-dragNdrop/"
-                        />
+                        {projectsData.map((project, index) => (
+                            <ProjectCard
+                                key={index}
+                                image={project.image}
+                                title={project.title}
+                                description={project.description}
+                                githubUrl={project.githubUrl}
+                                previewUrl={project.previewUrl}
+                            />
+                        ))}
                     </motion.div>
                 </div>
             </section>
