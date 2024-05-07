@@ -4,10 +4,17 @@ import { CardItem, CardBody, CardContainer } from "./ui/3d-card";
 import EmailContact from "./ui/EmailContact";
 import Image from "next/image";
 import IconButton from "../ui/IconButton";
+import { motion } from "framer-motion";
 
 import AboutMeIcon from "../ui/icons/AboutMeIcon";
 import LinkedInIcon from "../ui/icons/LinkedInLogo";
 import GitHubIcon from "../ui/icons/GithubIcon";
+
+
+const pageVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 
 export function ExperiencePage() {
   return (
@@ -20,6 +27,11 @@ export function ExperiencePage() {
         <AboutMeIcon />
         Sobre mí
       </h2>
+      <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={pageVariants}
+    >
 
       <div className="flex flex-col md:flex-row justify-between items-start">
         <div className="w-full md:w-1/2 p-4 pt-0">
@@ -69,6 +81,7 @@ export function ExperiencePage() {
         </CardContainer>
       </div>
       </div>
+      </motion.div>
     </section>
       <section id="technologies" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto mt-40 p-4">
         <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white">
