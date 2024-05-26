@@ -39,7 +39,7 @@ export function ExperiencePage() {
         </span>
       </div>
       {OTHER_EXPERIENCES.map((experience, index) => (
-        <div className="relative" key={index}>
+        <div className="relative p-5" key={index}>
           <ExperienceItem {...experience} />
         </div>
       ))}

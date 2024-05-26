@@ -17,7 +17,7 @@ const ExperienceItem: React.FC<Props> = ({ title, description, date, imageUrl, i
                     {!hideTimeline && (
                         <>
                             {!isHeadItem && (
-                                <div className="w-3 h-3 rounded-full bg-gray-700 border-2 border-gray-900 absolute" style={{ top: '58px', left: '-5px', zIndex: '10' }}></div>
+                                <div className="w-3 h-3 rounded-full bg-gray-700 border-2 border-gray-900 absolute" style={{ top: '80px', left: '15px', zIndex: '10' }}></div>
                             )}
                             <div className="w-0.5 bg-gray-300 absolute" style={{ height: 'calc(100% + 2px' }}>
                             </div>
