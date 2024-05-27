@@ -15,6 +15,7 @@ type LinkItem = {
 const linkItems: LinkItem[] = [
   { name: 'Experiencia', url: '/experiencia' },
   { name: 'Proyectos', url: '/proyectos' },
+  { name: 'Conocimientos', url: '/conocimientos' },
   { name: 'Sobre mí', url: '/sobre-mi' },
 ];
 
