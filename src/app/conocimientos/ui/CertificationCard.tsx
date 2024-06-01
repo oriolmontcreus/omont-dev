@@ -79,19 +79,20 @@ export const Card = ({
     >
       <div className="relative z-50">
         <div className="p-4">
-        <img src={item.logo} alt={item.title} className="rounded" />
+          <img src={item.logo} alt={item.title} className="rounded" />
           {children}
-          <p className="mb-2">{item.description}</p>
+          <p className="mb-2 text-sm sm:text-base md:text-lg lg:text-base">{item.description}</p>
           <p className="inline-block bg-slate-700 text-zinc-100 text-xs px-2 rounded-full uppercase font-semibold tracking-wide overflow-hidden whitespace-nowrap overflow-ellipsis max-w-full mb-1">{item.issuedOrganization}</p>
           <div className="flex items-center">
             <CalendarIcon />
-            <p className="ml-2">{item.issuedDate.toLocaleDateString('es-ES', { month: 'short', year: 'numeric' })}</p>
+            <p className="ml-2 text-sm sm:text-base md:text-lg lg:text-base">{item.issuedDate.toLocaleDateString('es-ES', { month: 'short', year: 'numeric' })}</p>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
 export const CardTitle = ({
   className,
   children,
@@ -100,7 +101,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("font-bold tracking-wide mt-4 text-blue-400", className)}>
+    <h4 className={cn("font-bold tracking-wide mt-4 text-blue-400 text-sm sm:text-base md:text-lg lg:text-base", className)}>
       {children}
     </h4>
   );

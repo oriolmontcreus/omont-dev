@@ -48,6 +48,9 @@ export function KnowledgePage() {
         ))}
       </motion.section>
       <br /><br />
+      <h2 className="flex items-center justify-center mb-6 text-2xl font-semibold gap-x-3 text-white ml-4">
+        Certificados
+      </h2>
       <CertificationCard items={items} />
     </section>
   );
