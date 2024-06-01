@@ -23,13 +23,20 @@ export const CertificationCard = ({
       {items.map((item, idx) => (
         <Link
           href={item?.url}
-          key={item?.url}
-          className="relative group block p-2"
-          onMouseEnter={() => setHoveredIndex(idx)}
+          key={idx}
+          className={`relative group block p-2 ${item?.url === '#' ? 'cursor-default' : ''}`}
+          style={{ flex: '1 0 auto' }}
+          onMouseEnter={() => item?.url !== '#' && setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          target="_blank"
+          onClick={(event) => {
+            if (item?.url === '#') {
+              event.preventDefault();
+            }
+          }}
         >
           <AnimatePresence>
-            {hoveredIndex === idx && (
+            {hoveredIndex === idx && item?.url !== '#' && (
               <motion.span
                 className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
                 layoutId="hoverBackground"
@@ -72,13 +79,13 @@ export const Card = ({
     >
       <div className="relative z-50">
         <div className="p-4">
-          <img src={item.logo} alt={item.title} className="mb-4" />
+        <img src={item.logo} alt={item.title} className="rounded" />
           {children}
           <p className="mb-2">{item.description}</p>
           <p className="inline-block bg-slate-700 text-zinc-100 text-xs px-2 rounded-full uppercase font-semibold tracking-wide overflow-hidden whitespace-nowrap overflow-ellipsis max-w-full mb-1">{item.issuedOrganization}</p>
           <div className="flex items-center">
             <CalendarIcon />
-            <p className="ml-2">{item.issuedDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })}</p>
+            <p className="ml-2">{item.issuedDate.toLocaleDateString('es-ES', { month: 'short', year: 'numeric' })}</p>
           </div>
         </div>
       </div>
