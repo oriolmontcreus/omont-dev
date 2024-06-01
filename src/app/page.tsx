@@ -7,6 +7,7 @@ import { SectionCard } from "./ui/section-card";
 import ExperienceIcon from "./ui/icons/ExperienceIcon";
 import ProjectsIcon from "./ui/icons/ProjectsIcon";
 import AboutMeIcon from "./ui/icons/AboutMeIcon";
+import SchoolIcon from "./ui/icons/SchoolIcon";
 
 export function HomePage() {
 return (
@@ -83,6 +84,12 @@ export const projects = [
     link: "/proyectos",
     backgroundColor: 'linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
     icon: <ProjectsIcon />,
+  },
+  {
+    title: "Conocimientos",
+    link: "/conocimientos",
+    backgroundColor: 'linear-gradient(45deg, rgba(60,179,113,1) 30%, rgba(102,205,170,1) 90%)',
+    icon: <SchoolIcon />,
   },
   {
     title: "Sobre mí",
