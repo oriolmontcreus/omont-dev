@@ -1,40 +1,16 @@
 "use client"
 import ExperienceItem from "../ui/experience-item";
 import Navbar from "../ui/navbar";
-import { KNOWLEDGE_STEPS } from "./content";
+import { KNOWLEDGE_STEPS } from "./content/content";
 import { motion } from "framer-motion";
 import SchoolIcon from "../ui/icons/SchoolIcon";
-import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
-import { items } from "./content";
-import { useState } from "react";
+import { items } from "./content/content";
+import { CertificationCard } from "./ui/CertificationCard";
 
 const pageVariants = {
   hidden: { opacity: 0, y: -20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
-
-export function BentoGridSection() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  return (
-    <BentoGrid className="max-w-4xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          index={i}
-          hoveredIndex={hoveredIndex}
-          setHoveredIndex={setHoveredIndex}
-          title={item.title}
-          description={item.description}
-          logo={<img src={item.logo} alt="logo" style={{ borderRadius: '7px' }} />}
-          issuedDate={item.issuedDate}
-          issuedOrganization={item.issuedOrganization}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-        />
-      ))}
-    </BentoGrid>
-  );
-}
 
 export function KnowledgePage() {
   return (
@@ -72,7 +48,7 @@ export function KnowledgePage() {
         ))}
       </motion.section>
       <br /><br />
-      <BentoGridSection />
+      <CertificationCard items={items} />
     </section>
   );
 }

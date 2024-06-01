@@ -17,185 +17,149 @@ export const KNOWLEDGE_STEPS = [
   },
 ];
 
-export const items = [
+export const items: CertDefinition[] = [
   {
     title: "Curso de PowerShell para principiantes",
     description: "A beginner's course on PowerShell.",
     logo: "/KnowledgeAssets/Logos/bLogos/openwebinars.webp",
-    mainImage: "/KnowledgeAssets/Logos/cert-powershell-omont.pdf",
+    url: "test",
     issuedDate: "2024-01-01",
     issuedOrganization: "OpenWebinars",
-    credentialId: "Iooj",
-    skills: "Powershell"
   },
   {
     title: "Test de Aptitud de MongoDB",
     description: "Aptitude test for MongoDB skills.",
     logo: "/KnowledgeAssets/Logos/bLogos/openwebinars.webp",
-    mainImage: "cert-mongodb-omont.pdf",
+    url: "test",
     issuedDate: "2024-01-01",
     issuedOrganization: "OpenWebinars",
-    credentialId: "Knc6",
-    skills: "Databases - MongoDB"
   },
   {
     title: "Curso de Confluence: Funcionalidades y gestión documental",
     description: "Course on Confluence features and document management.",
     logo: "/KnowledgeAssets/Logos/bLogos/openwebinars.webp",
-    mainImage: "cert-confluence-omont.pdf",
+    url: "test",
     issuedDate: "2023-11-01",
     issuedOrganization: "OpenWebinars",
-    credentialId: "28CI",
-    skills: "Confluence"
   },
   {
     title: "Petardos - Dependiente/a de tienda",
     description: "Curso sobre las habilidades necesarias para ser dependiente/a de tienda.",
     logo: "/KnowledgeAssets/Logos/bLogos/sepra.webp",
-    mainImage: "cert-dependiente-petardos-omont.pdf",
+    url: "test",
     issuedDate: "2023-05-01",
     issuedOrganization: "SePra, SCC",
-    credentialId: "test",
-    skills: "test"
   },
   {
     title: "Manipulación manual de cargas",
     description: "Curso sobre la manipulación segura de cargas manuales.",
     logo: "/KnowledgeAssets/Logos/bLogos/quiroprevencion.webp",
-    mainImage: "cert-manipulacargas-omont.pdf",
+    url: "test",
     issuedDate: "2023-04-01",
     issuedOrganization: "Quirónprevención",
-    credentialId: "test",
-    skills: "test"
   },
   {
     title: "Prevención de riesgos en puestos de industria cárnica",
     description: "Curso sobre la prevención de riesgos en la industria cárnica.",
     logo: "/KnowledgeAssets/Logos/bLogos/quiroprevencion.webp",
-    mainImage: "cert-icarnica-omont.pdf",
+    url: "test",
     issuedDate: "2023-04-01",
     issuedOrganization: "Quirónprevención",
-    credentialId: "test",
-    skills: "Meat Processing"
   },
   {
     title: "Seguridad en el manejo de transpaletas y apiladores",
     description: "Curso sobre seguridad en el manejo de transpaletas y apiladores.",
     logo: "/KnowledgeAssets/Logos/bLogos/quiroprevencion.webp",
-    mainImage: "cert-transpaletas&apiladores-omont.pdf",
+    url: "test",
     issuedDate: "2023-04-01",
     issuedOrganization: "Quirónprevención",
-    credentialId: "test",
-    skills: "pallet truck"
   },
   {
     title: "Curso de Introducción al Desarrollo Web: HTML y CSS (2/2)",
     description: "Curso introductorio sobre el desarrollo web con HTML y CSS.",
     logo: "/KnowledgeAssets/Logos/bLogos/ualacant.webp",
-    mainImage: "Curso de Introducción al Desarrollo Web HTML y CSS 2.pdf",
+    url: "test",
     issuedDate: "2023-02-01",
     issuedOrganization: "Universitat d'Alacant",
-    credentialId: "XQ2 RRD 5ZY",
-    skills: "HTML5, HTML, Cascading Style Sheets (CSS)"
   },
   {
     title: "Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)",
     description: "Curso introductorio sobre el desarrollo web con HTML y CSS.",
     logo: "/KnowledgeAssets/Logos/bLogos/ualacant.webp",
-    mainImage: "Curso de Introducción al Desarrollo Web HTML y CSS 1.pdf",
+    url: "test",
     issuedDate: "2023-01-01",
     issuedOrganization: "Universitat d'Alacant",
-    credentialId: "NS6 2T2 W8T",
-    skills: "HTML, Cascading Style Sheets (CSS)"
   },
   {
     title: "Cloud Computing",
     description: "Curso sobre computación en la nube.",
     logo: "/KnowledgeAssets/Logos/bLogos/redes.webp",
-    mainImage: "cert-cloud-computing-omont.pdf",
+    url: "test",
     issuedDate: "2022-10-01",
     issuedOrganization: "Red.es",
-    credentialId: "WSQ JDT 4WR",
-    skills: "test"
   },
   {
     title: "Digitaliza paso a paso tu negocio con herramientas de Google",
     description: "Curso sobre cómo digitalizar tu negocio utilizando herramientas de Google.",
     logo: "/KnowledgeAssets/Logos/bLogos/google.webp",
-    mainImage: "cert-digitaliza-omont.pdf",
+    url: "test",
     issuedDate: "2022-10-01",
     issuedOrganization: "Google",
-    credentialId: "NTS J9W TCQ",
-    skills: "Google Analytics, Design"
   },
   {
     title: "Protege tu Negocio: Ciberseguridad en el Teletrabajo",
     description: "Curso sobre ciberseguridad en el teletrabajo.",
     logo: "/KnowledgeAssets/Logos/bLogos/eoi.webp",
-    mainImage: "cert-ciber-teletrabajo-omont.pdf",
+    url: "test",
     issuedDate: "2022-10-01",
     issuedOrganization: "Escuela de Organización Industrial",
-    credentialId: "M9B MEL VWQ",
-    skills: "Design"
   },
   {
     title: "Introduction to Programming Using Python",
     description: "Curso introductorio sobre programación utilizando Python.",
     logo: "/KnowledgeAssets/Logos/bLogos/uurv.webp",
-    mainImage: "cert-python-omont.pdf",
+    url: "test",
     issuedDate: "2021-06-01",
     issuedOrganization: "Universitat Rovira i Virgili",
-    credentialId: "test",
-    skills: "Python (Programming Language)"
   },
   {
     title: "Comercio electrónico",
     description: "Curso sobre comercio electrónico.",
     logo: "/KnowledgeAssets/Logos/bLogos/eoi.webp",
-    mainImage: "cert-comercioelec-omont.pdf",
+    url: "test",
     issuedDate: "2019-08-01",
     issuedOrganization: "Escuela de Organización Industrial",
-    credentialId: "WJQ VUQ L9T",
-    skills: "test"
   },
   {
     title: "Competencias digitales para profesionales",
     description: "Curso sobre competencias digitales para profesionales.",
     logo: "/KnowledgeAssets/Logos/bLogos/santamar.webp",
-    mainImage: "cert-compdigitales-omont.pdf",
+    url: "test",
     issuedDate: "2019-08-01",
     issuedOrganization: "Fundación Santa María la Real del Patrimonio Histórico",
-    credentialId: "H2S RY9 LQ9",
-    skills: "Teamwork"
   },
   {
     title: "Transformación digital para el empleo",
     description: "Curso sobre la transformación digital para mejorar la empleabilidad.",
     logo: "/KnowledgeAssets/Logos/bLogos/gentecon.webp",
-    mainImage: "cert-transformaciondigital-omont.pdf",
+    url: "test",
     issuedDate: "2019-08-01",
     issuedOrganization: "Gente con Garantía Juvenil",
-    credentialId: "U3T T6E AYU",
-    skills: "Google Analytics, Teamwork"
   },
   {
     title: "Fundamentos de Marketing Digital",
     description: "Curso sobre los fundamentos del marketing digital.",
     logo: "/KnowledgeAssets/Logos/bLogos/iab.webp",
-    mainImage: "cert-fundamentosmarketingdigital-omont.pdf",
+    url: "test",
     issuedDate: "2019-07-01",
     issuedOrganization: "IAB",
-    credentialId: "XW8 DVY DTN",
-    skills: "Google Analytics, Communication, Design, Teamwork"
   },
   {
     title: "Mecanografía",
     description: "Curso sobre mecanografía.",
     logo: "/KnowledgeAssets/Logos/bLogos/unknown.webp",
-    mainImage: "cert-mecanografia-omont.pdf",
+    url: "test",
     issuedDate: "2018-06-01",
     issuedOrganization: "Meca Ràpid EMAG1",
-    credentialId: "test",
-    skills: "test"
   }
 ];

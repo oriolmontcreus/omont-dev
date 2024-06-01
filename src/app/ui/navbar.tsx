@@ -61,7 +61,7 @@ const Navbar = () => {
       <div className={`flex flex-col space-y-4 md:flex-row md:space-x-4 ${isOpen ? 'block' : 'hidden'} md:block`}>
           <Link href="/">
               <motion.div
-                  className={`cursor-pointer inline-block px-4 py-2 -mb-3.5 rounded-full border-2 border-transparent transition-all duration-200 ease-in-out items-center ${path === '/' ? 'text-blue-500 hover:border-red-500' : 'text-white hover:text-gray-200  hover:border-white'}`}
+                  className={`cursor-pointer inline-block px-4 py-2 -mb-3.5 rounded-full border-2 border-transparent transition-all duration-200 ease-in-out items-center ${path === '/' ? 'text-blue-400 hover:border-red-500' : 'text-white hover:text-gray-200  hover:border-white'}`}
                   variants={linkVariants}
                   initial="initial"
                   whileHover="hover"
@@ -72,7 +72,7 @@ const Navbar = () => {
           {linkItems.map((item) => (
               <Link key={item.name} href={item.url}>
                   <motion.div
-                      className={`cursor-pointer inline-block px-4 py-2 rounded-full border-2 border-transparent transition-all duration-200 ease-in-out ${path === item.url ? 'text-blue-500 hover:border-white' : 'text-white hover:text-gray-200  hover:border-white'}`}
+                      className={`cursor-pointer inline-block px-4 py-2 rounded-full border-2 border-transparent transition-all duration-200 ease-in-out ${path === item.url ? 'text-blue-400 hover:border-white' : 'text-white hover:text-gray-200  hover:border-white'}`}
                       variants={linkVariants}
                       initial="initial"
                       whileHover="hover"
