@@ -7,6 +7,7 @@ import SchoolIcon from "../ui/icons/SchoolIcon";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { items } from "./content";
 import { useState } from "react";
+import { CertificationCard } from "./ui/CertificationCard";
 
 const pageVariants = {
   hidden: { opacity: 0, y: -20 },
@@ -72,7 +73,7 @@ export function KnowledgePage() {
         ))}
       </motion.section>
       <br /><br />
-      <BentoGridSection />
+      <CertificationCard items={items} />
     </section>
   );
 }
