@@ -3,7 +3,7 @@ type CertDefinition = {
   description: string;
   logo: string;
   url: string;
-  issuedDate: string;
+  issuedDate: Date;
   issuedOrganization: string;
 };
 

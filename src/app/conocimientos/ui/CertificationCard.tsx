@@ -1,3 +1,4 @@
+import CalendarIcon from "@/app/ui/icons/CalendarIcon";
 import { cn } from "../../../../utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -7,14 +8,7 @@ export const CertificationCard = ({
   items,
   className,
 }: {
-  items: {
-    title: string;
-    description: string;
-    logo: string;
-    url: string;
-    issuedDate: string;
-    issuedOrganization: string;
-  }[];
+  items: CertDefinition[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -67,14 +61,7 @@ export const Card = ({
 }: {
   className?: string;
   children: React.ReactNode;
-  item: {
-    title: string;
-    description: string;
-    logo: string;
-    url: string;
-    issuedDate: string;
-    issuedOrganization: string;
-  };
+  item: CertDefinition;
 }) => {
   return (
     <div
@@ -83,15 +70,18 @@ export const Card = ({
         className
       )}
     >
-    <div className="relative z-50">
-      <div className="p-4">
-        <img src={item.logo} alt={item.title} />
-        {children}
-        <p>{item.description}</p>
-        <p className="inline-block bg-slate-700 text-zinc-100 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">{item.issuedOrganization}</p>
-        <p>Fecha: {item.issuedDate}</p>
+      <div className="relative z-50">
+        <div className="p-4">
+          <img src={item.logo} alt={item.title} className="mb-4" />
+          {children}
+          <p className="mb-2">{item.description}</p>
+          <p className="inline-block bg-slate-700 text-zinc-100 text-xs px-2 rounded-full uppercase font-semibold tracking-wide overflow-hidden whitespace-nowrap overflow-ellipsis max-w-full mb-1">{item.issuedOrganization}</p>
+          <div className="flex items-center">
+            <CalendarIcon />
+            <p className="ml-2">{item.issuedDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })}</p>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

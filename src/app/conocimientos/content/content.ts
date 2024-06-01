@@ -23,7 +23,7 @@ export const items: CertDefinition[] = [
     description: "A beginner's course on PowerShell.",
     logo: "/KnowledgeAssets/Logos/bLogos/openwebinars.webp",
     url: "test",
-    issuedDate: "2024-01-01",
+    issuedDate: new Date("2024-01-01"),
     issuedOrganization: "OpenWebinars",
   },
   {
@@ -31,7 +31,7 @@ export const items: CertDefinition[] = [
     description: "Aptitude test for MongoDB skills.",
     logo: "/KnowledgeAssets/Logos/bLogos/openwebinars.webp",
     url: "test",
-    issuedDate: "2024-01-01",
+    issuedDate: new Date("2024-01-01"),
     issuedOrganization: "OpenWebinars",
   },
   {
@@ -39,7 +39,7 @@ export const items: CertDefinition[] = [
     description: "Course on Confluence features and document management.",
     logo: "/KnowledgeAssets/Logos/bLogos/openwebinars.webp",
     url: "test",
-    issuedDate: "2023-11-01",
+    issuedDate: new Date("2023-11-01"),
     issuedOrganization: "OpenWebinars",
   },
   {
@@ -47,7 +47,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre las habilidades necesarias para ser dependiente/a de tienda.",
     logo: "/KnowledgeAssets/Logos/bLogos/sepra.webp",
     url: "test",
-    issuedDate: "2023-05-01",
+    issuedDate: new Date("2023-05-01"),
     issuedOrganization: "SePra, SCC",
   },
   {
@@ -55,7 +55,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre la manipulación segura de cargas manuales.",
     logo: "/KnowledgeAssets/Logos/bLogos/quiroprevencion.webp",
     url: "test",
-    issuedDate: "2023-04-01",
+    issuedDate: new Date("2023-04-01"),
     issuedOrganization: "Quirónprevención",
   },
   {
@@ -63,7 +63,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre la prevención de riesgos en la industria cárnica.",
     logo: "/KnowledgeAssets/Logos/bLogos/quiroprevencion.webp",
     url: "test",
-    issuedDate: "2023-04-01",
+    issuedDate: new Date("2023-04-01"),
     issuedOrganization: "Quirónprevención",
   },
   {
@@ -71,7 +71,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre seguridad en el manejo de transpaletas y apiladores.",
     logo: "/KnowledgeAssets/Logos/bLogos/quiroprevencion.webp",
     url: "test",
-    issuedDate: "2023-04-01",
+    issuedDate: new Date("2023-04-01"),
     issuedOrganization: "Quirónprevención",
   },
   {
@@ -79,7 +79,7 @@ export const items: CertDefinition[] = [
     description: "Curso introductorio sobre el desarrollo web con HTML y CSS.",
     logo: "/KnowledgeAssets/Logos/bLogos/ualacant.webp",
     url: "test",
-    issuedDate: "2023-02-01",
+    issuedDate: new Date("2023-02-01"),
     issuedOrganization: "Universitat d'Alacant",
   },
   {
@@ -87,7 +87,7 @@ export const items: CertDefinition[] = [
     description: "Curso introductorio sobre el desarrollo web con HTML y CSS.",
     logo: "/KnowledgeAssets/Logos/bLogos/ualacant.webp",
     url: "test",
-    issuedDate: "2023-01-01",
+    issuedDate: new Date("2023-01-01"),
     issuedOrganization: "Universitat d'Alacant",
   },
   {
@@ -95,7 +95,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre computación en la nube.",
     logo: "/KnowledgeAssets/Logos/bLogos/redes.webp",
     url: "test",
-    issuedDate: "2022-10-01",
+    issuedDate: new Date("2022-10-01"),
     issuedOrganization: "Red.es",
   },
   {
@@ -103,7 +103,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre cómo digitalizar tu negocio utilizando herramientas de Google.",
     logo: "/KnowledgeAssets/Logos/bLogos/google.webp",
     url: "test",
-    issuedDate: "2022-10-01",
+    issuedDate: new Date("2022-10-01"),
     issuedOrganization: "Google",
   },
   {
@@ -111,7 +111,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre ciberseguridad en el teletrabajo.",
     logo: "/KnowledgeAssets/Logos/bLogos/eoi.webp",
     url: "test",
-    issuedDate: "2022-10-01",
+    issuedDate: new Date("2022-10-01"),
     issuedOrganization: "Escuela de Organización Industrial",
   },
   {
@@ -119,7 +119,7 @@ export const items: CertDefinition[] = [
     description: "Curso introductorio sobre programación utilizando Python.",
     logo: "/KnowledgeAssets/Logos/bLogos/uurv.webp",
     url: "test",
-    issuedDate: "2021-06-01",
+    issuedDate: new Date("2021-06-01"),
     issuedOrganization: "Universitat Rovira i Virgili",
   },
   {
@@ -127,7 +127,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre comercio electrónico.",
     logo: "/KnowledgeAssets/Logos/bLogos/eoi.webp",
     url: "test",
-    issuedDate: "2019-08-01",
+    issuedDate: new Date("2019-08-01"),
     issuedOrganization: "Escuela de Organización Industrial",
   },
   {
@@ -135,7 +135,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre competencias digitales para profesionales.",
     logo: "/KnowledgeAssets/Logos/bLogos/santamar.webp",
     url: "test",
-    issuedDate: "2019-08-01",
+    issuedDate: new Date("2019-08-01"),
     issuedOrganization: "Fundación Santa María la Real del Patrimonio Histórico",
   },
   {
@@ -143,7 +143,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre la transformación digital para mejorar la empleabilidad.",
     logo: "/KnowledgeAssets/Logos/bLogos/gentecon.webp",
     url: "test",
-    issuedDate: "2019-08-01",
+    issuedDate: new Date("2019-08-01"),
     issuedOrganization: "Gente con Garantía Juvenil",
   },
   {
@@ -151,7 +151,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre los fundamentos del marketing digital.",
     logo: "/KnowledgeAssets/Logos/bLogos/iab.webp",
     url: "test",
-    issuedDate: "2019-07-01",
+    issuedDate: new Date("2019-07-01"),
     issuedOrganization: "IAB",
   },
   {
@@ -159,7 +159,7 @@ export const items: CertDefinition[] = [
     description: "Curso sobre mecanografía.",
     logo: "/KnowledgeAssets/Logos/bLogos/unknown.webp",
     url: "test",
-    issuedDate: "2018-06-01",
+    issuedDate: new Date("2018-06-01"),
     issuedOrganization: "Meca Ràpid EMAG1",
   }
 ];
