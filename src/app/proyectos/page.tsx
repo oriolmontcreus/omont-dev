@@ -21,7 +21,7 @@ export function ProyectosPage() {
                     <ProjectsIcon />
                     Proyectos
                 </h2>
-                <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-4 mb-4">
                     <motion.div
                         className="flex flex-wrap justify-center gap-4"
                         initial="hidden"
