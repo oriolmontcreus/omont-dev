@@ -37,10 +37,10 @@ const Navbar = () => {
   }, []);
 
   const linkVariants = {
-    initial: { backgroundColor: 'transparent' },
-    hover: { scale: 1.1, backgroundColor: '#444', transition: { duration: 0.3 } },
+    initial: { backgroundColor: 'rgba(68, 68, 68, 0)' }, 
+    hover: { scale: 1.1, transition: { duration: 0.3 } },
   };
-
+  
   return (
     <nav className="bg-gray-900 bg-opacity-80 border border-gray-700 px-4 py-2 mt-4 rounded-2xl max-w-[42em] w-auto mx-auto z-50 relative backdrop-blur-md">
       {isOpen && isMobile && (
