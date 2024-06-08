@@ -6,9 +6,9 @@ const ProjectsIcon = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round">
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round">
             <path d="m18 16 4-4-4-4"/>
             <path d="m6 8-4 4 4 4"/>
             <path d="m14.5 4-5 16"/>

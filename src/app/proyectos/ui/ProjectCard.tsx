@@ -17,7 +17,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, gi
   return (
     <div className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full sm:w-[30rem] h-auto rounded-xl p-6 border flex flex-col sm:flex-row sm:w-42em overflow-hidden" style={{ maxWidth: '100%' }}>
       <div className="w-full sm:w-1/2 relative" style={{ paddingBottom: '30%' }}>
-        <Image src={image} layout="fill" objectFit="cover" alt={title} className="absolute top-0 left-0 w-full h-full border-2 rounded-lg border-white/[0.2]" />
+      <Image 
+        src={image} 
+        alt={title} 
+        width={216}
+        height={216}
+        className="absolute top-0 left-0 w-full h-full border-2 rounded-lg border-white/[0.2] object-cover object-center" 
+      />
       </div>
       <div className="p-4 w-full sm:w-1/2 flex flex-col justify-between">
         <div>

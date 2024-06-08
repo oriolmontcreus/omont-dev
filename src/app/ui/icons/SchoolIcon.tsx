@@ -6,9 +6,9 @@ const SchoolIcon = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round">
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round">
             <path d="M14 22v-4a2 2 0 1 0-4 0v4" />
             <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2" />
             <path d="M18 5v17" />
