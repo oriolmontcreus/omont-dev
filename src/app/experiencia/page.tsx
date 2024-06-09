@@ -4,7 +4,7 @@ import Navbar from "../ui/navbar";
 import { DEVELOPER_EXPERIENCES, OTHER_EXPERIENCES } from "./content";
 import { motion } from "framer-motion";
 
-import ExperienceIcon from "../ui/icons/ExperienceIcon";
+import ExperienceIcon from "@icons/ExperienceIcon";
 
 const pageVariants = {
   hidden: { opacity: 0, y: -20 },

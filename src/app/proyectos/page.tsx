@@ -2,7 +2,7 @@
 import Navbar from "../ui/navbar";
 import ProjectCard from "./ui/ProjectCard";
 import { motion } from "framer-motion";
-import ProjectsIcon from "../ui/icons/ProjectsIcon";
+import ProjectsIcon from "@icons/ProjectsIcon";
 import { projectsData } from './content';
 
 const cardVariants = {

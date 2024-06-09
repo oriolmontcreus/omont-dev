@@ -2,12 +2,12 @@
 import { motion } from "framer-motion";
 import { Highlight } from "./ui/hero";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
-import LinkedInLogo from "./ui/icons/LinkedInLogo";
+import LinkedInLogo from "@icons/LinkedInLogo";
 import { SectionCard } from "./ui/section-card";
-import ExperienceIcon from "./ui/icons/ExperienceIcon";
-import ProjectsIcon from "./ui/icons/ProjectsIcon";
-import AboutMeIcon from "./ui/icons/AboutMeIcon";
-import SchoolIcon from "./ui/icons/SchoolIcon";
+import ExperienceIcon from "@icons/ExperienceIcon";
+import ProjectsIcon from "@icons/ProjectsIcon";
+import AboutMeIcon from "@icons/AboutMeIcon";
+import SchoolIcon from "@icons/SchoolIcon";
 
 export function HomePage() {
 return (

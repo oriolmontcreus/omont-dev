@@ -6,9 +6,9 @@ import Image from "next/image";
 import IconButton from "../ui/IconButton";
 import { motion } from "framer-motion";
 
-import AboutMeIcon from "../ui/icons/AboutMeIcon";
-import LinkedInIcon from "../ui/icons/LinkedInLogo";
-import GitHubIcon from "../ui/icons/GithubIcon";
+import AboutMeIcon from "@icons/AboutMeIcon";
+import LinkedInIcon from "@icons/LinkedInLogo";
+import GitHubIcon from "@icons/GithubIcon";
 
 
 const pageVariants = {

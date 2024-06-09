@@ -3,7 +3,7 @@ import ExperienceItem from "../ui/experience-item";
 import Navbar from "../ui/navbar";
 import { KNOWLEDGE_STEPS } from "./content/content";
 import { motion } from "framer-motion";
-import SchoolIcon from "../ui/icons/SchoolIcon";
+import SchoolIcon from "@icons/SchoolIcon";
 import { items } from "./content/content";
 import { CertificationCard } from "./ui/CertificationCard";
 
