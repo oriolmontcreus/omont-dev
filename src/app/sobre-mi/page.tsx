@@ -37,7 +37,7 @@ export function ExperiencePage() {
             <div className="w-full md:w-1/2 p-4 pt-0">
               <div className="space-y-4">
                 <p className="leading-relaxed">
-                  Mi nombre es <strong className="text-yellow-500"> Oriol Mont</strong>, un joven de 19 años originario de Girona. Soy un <strong className="text-yellow-500">Desarrollador FullStack</strong> y en la actualidad, estoy ampliando mis habilidades técnicas aprendiendo nuevos frameworks web, incluyendo <strong className="text-yellow-500">Angular, Laravel, Astro y Blazor</strong>.
+                  Mi nombre es <strong className="text-yellow-500"> Oriol Mont</strong>, un joven de 19 años originario de Girona. Soy un <strong className="text-yellow-500">Desarrollador de Software</strong> y en la actualidad, estoy ampliando mis habilidades técnicas aprendiendo nuevos frameworks web, incluyendo <strong className="text-yellow-500">Angular, Laravel, Astro y Blazor</strong>.
                 </p>
                 <p className="leading-relaxed">
                   Mi pasión radica en optimizar el rendimiento y la estética de las aplicaciones web para proporcionar la <strong className="text-yellow-500">mejor experiencia al usuario</strong>. Creo firmemente en la importancia de un <strong className="text-yellow-500">diseño intuitivo</strong> y una <strong className="text-yellow-500">interacción fluida</strong> para el éxito de cualquier proyecto web.
@@ -64,7 +64,7 @@ export function ExperiencePage() {
                     <ul className="list-disc list-inside space-y-2">
                       <li>🚹 Oriol Mont Creus</li>
                       <li>🎂 06 - 2004</li>
-                      <li>💻 Desarrollador Full-stack</li>
+                      <li>💻 Desarrollador de Software</li>
                     </ul>
                   </CardItem>
                 </CardItem>

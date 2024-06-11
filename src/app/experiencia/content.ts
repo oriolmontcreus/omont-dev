@@ -1,7 +1,7 @@
 export const DEVELOPER_EXPERIENCES = [
     {
       date: "Noviembre 2023 - Actualidad",
-      title: "Desarrollador FullStack - Irontech Group",
+      title: "Desarrollador de Software - Irontech Group",
       description:
         "Responsable de la creación y actualización de herramientas web internas, mejorando la eficiencia y productividad de la empresa. Mis tareas incluyen el diseño y desarrollo de interfaces de usuario, la implementación de nuevas funcionalidades y la resolución de problemas técnicos para garantizar un rendimiento óptimo.",
       imageUrl: "/ExperienceLogos/irontech-whitebg.webp",
