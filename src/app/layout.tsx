@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "omont Portfolio",
   description: "Portfolio of oriol mont creus",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
