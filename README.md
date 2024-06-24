@@ -15,8 +15,6 @@ This portfolio is built using Next.js and styled with Tailwind CSS. It showcases
 ### Español
 
 - [Empezando](#empezando-)
-- [Aprende Más](#aprende-más-)
-
 - [Credits](#créditoscredits-)
 
 ## English 🇬🇧
@@ -69,13 +67,6 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el 
 Puedes comenzar a editar la página modificando `app/page.tsx`. La página se actualiza automáticamente a medida que editas el archivo.
 
 Este proyecto utiliza [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para optimizar y cargar automáticamente Inter, una fuente personalizada de Google Font.
-
-### Aprende Más 📖
-
-Para aprender más sobre Next.js, consulta los siguientes recursos:
-
-- [Documentación de Next.js](https://nextjs.org/docs) - aprende sobre las características y la API de Next.js.
-- [Aprende Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
 
 ## Créditos/Credits 💼
 
