@@ -8,14 +8,15 @@ This portfolio is built using Next.js and styled with Tailwind CSS. It showcases
 ## Table of Contents 📚
 
 ### English
+
 - [Getting Started](#getting-started-)
 - [Learn More](#learn-more-)
 
 ### Español
+
 - [Empezando](#empezando-)
 - [Aprende Más](#aprende-más-)
 
-- [Deploy on Vercel](#deploy-on-vercel-)
 - [Credits](#créditoscredits-)
 
 ## English 🇬🇧
@@ -75,12 +76,6 @@ Para aprender más sobre Next.js, consulta los siguientes recursos:
 
 - [Documentación de Next.js](https://nextjs.org/docs) - aprende sobre las características y la API de Next.js.
 - [Aprende Next.js](https://nextjs.org/learn) - un tutorial interactivo de Next.js.
-
-## Deploy on Vercel 🌍
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Créditos/Credits 💼
 
