@@ -2,6 +2,9 @@
 
 This portfolio is built using Next.js and styled with Tailwind CSS. It showcases the following: about me, projects, experiences, technologies, education, and certifications.
 
+![Portfolio Preview 1](./public/ReadmeAssets/pf-landing.png)
+![Portfolio Preview 2](./public/ReadmeAssets/pf-experience.png)
+
 ## Table of Contents 📚
 
 ### English
