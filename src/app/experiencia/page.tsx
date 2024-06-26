@@ -1,4 +1,5 @@
 "use client"
+import { useEffect, useState } from 'react'
 import ExperienceItem from "../ui/experience-item";
 import Navbar from "../ui/navbar";
 import { DEVELOPER_EXPERIENCES, OTHER_EXPERIENCES } from "./content";
@@ -10,10 +11,20 @@ const pageVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-const ExperiencePage = () => {
+const ExperiencePageComponent = () => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
+  }
+
   return (
     <section id="experiencia" data-section="experiencia" className="relative flex flex-col h-screen dark max-w-2xl mx-auto pt-40">
-      <div style={{ position: 'fixed', top: '20px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }}>
+      <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50">
         <Navbar/>
       </div>
       <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white ml-4">
@@ -33,7 +44,7 @@ const ExperiencePage = () => {
           </div>
         ))}
         <div className="my-6 border-t border-gray-200 dark:border-gray-700 text-center relative">
-          <span className="absolute left-0 right-0 top-50% transform -translate-y-50% text-gray-500 font-semibold">
+          <span className="absolute left-0 right-0 top-1/2 -translate-y-1/2 text-gray-500 font-semibold">
             Roles en otros campos
           </span>
         </div>
@@ -47,4 +58,4 @@ const ExperiencePage = () => {
   );
 }
 
-export default ExperiencePage;
+export default ExperiencePageComponent;

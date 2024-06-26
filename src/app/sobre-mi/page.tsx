@@ -1,4 +1,5 @@
 "use client"
+import { useEffect, useState } from 'react';
 import Navbar from "../ui/navbar";
 import { CardItem, CardBody, CardContainer } from "./ui/3d-card";
 import EmailContact from "./ui/EmailContact";
@@ -10,17 +11,26 @@ import AboutMeIcon from "@icons/AboutMeIcon";
 import LinkedInIcon from "@icons/LinkedInLogo";
 import GitHubIcon from "@icons/GithubIcon";
 
-
 const pageVariants = {
   hidden: { opacity: 0, y: -20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-export function ExperiencePage() {
+const SobreMiPage = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <div>
       <section id="sobre-mi" data-section="sobre-mi" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto pt-40">
-        <div style={{ position: 'fixed', top: '20px', left: '50%', transform: 'translateX(-50%)', zIndex: 1000 }}>
+        <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50">
           <Navbar />
         </div>
         <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white ml-4">
@@ -32,7 +42,6 @@ export function ExperiencePage() {
           animate="visible"
           variants={pageVariants}
         >
-
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="w-full md:w-1/2 p-4 pt-0">
               <div className="space-y-4">
@@ -124,4 +133,4 @@ export function ExperiencePage() {
   );
 }
 
-export default ExperiencePage;
+export default SobreMiPage;

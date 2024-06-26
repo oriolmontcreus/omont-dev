@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Props {
     title: string;
@@ -25,7 +26,7 @@ const ExperienceItem: React.FC<Props> = ({ title, description, date, imageUrl, i
                     )}
                 </div>
                 <div>
-                    <img src={imageUrl} alt={title} style={{ borderRadius: '7px', width: '48px', height: '48px', objectFit: 'cover', marginBottom: '10px' }} />
+                    <Image src={imageUrl} alt={title} width={48} height={48} style={{ borderRadius: '7px', objectFit: 'cover', marginBottom: '10px' }} />
                     <time className="block mb-1 text-sm font-normal leading-none text-sky-800 dark:text-sky-200/80">{date}</time>
                     <h3 className="text-lg font-semibold text-yellow-800 dark:text-yellow-400 mt-2">{title}</h3>
                     <p className="mb-4 text-base font-normal dark:text-gray-200 text-pretty">{description}</p>

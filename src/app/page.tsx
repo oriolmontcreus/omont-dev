@@ -1,15 +1,25 @@
 "use client";
+import { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import { Highlight } from "./ui/hero";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import LinkedInLogo from "@icons/LinkedInLogo";
 import { SectionCard } from "./ui/section-card";
-import ExperienceIcon from "@icons/ExperienceIcon";
-import ProjectsIcon from "@icons/ProjectsIcon";
-import AboutMeIcon from "@icons/AboutMeIcon";
-import SchoolIcon from "@icons/SchoolIcon";
+import { homeCards } from "./homeCards";
 
 const HomePage = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const handleLinkedInClick = () => {
+    if (typeof window !== 'undefined') {
+      window.open('https://www.linkedin.com/in/oriol-mont-creus/', '_blank');
+    }
+  };
+
   return (
     <div className="relative flex flex-col items-center justify-center h-screen dark max-w-2xl mx-auto">
       <div className="w-full flex flex-row justify-start items-center mt-4 flex-wrap">
@@ -53,50 +63,25 @@ const HomePage = () => {
             }}
             className="flex justify-start w-full"
           >
-            <div className="mr-5 mt-2.5 rounded-full">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-                onClick={() => window.open('https://www.linkedin.com/in/oriol-mont-creus/', '_blank')}
-              >
-                <LinkedInLogo />
-                <span>Conectar</span>
-              </HoverBorderGradient>
-            </div>
+            {isMounted && (
+              <div className="mr-5 mt-2.5 rounded-full">
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                  onClick={handleLinkedInClick}
+                >
+                  <LinkedInLogo />
+                  <span>Conectar</span>
+                </HoverBorderGradient>
+              </div>
+            )}
           </motion.div>
         </div>
       </div>
-      <SectionCard items={projects} />
+      <SectionCard items={homeCards} />
     </div>
   );
 }
-
-export const projects = [
-  {
-    title: "Experiencia",
-    link: "/experiencia",
-    backgroundColor: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    icon: <ExperienceIcon />,
-  },
-  {
-    title: "Proyectos",
-    link: "/proyectos",
-    backgroundColor: 'linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)',
-    icon: <ProjectsIcon />,
-  },
-  {
-    title: "Conocimientos",
-    link: "/conocimientos",
-    backgroundColor: 'linear-gradient(45deg, rgba(60,179,113,1) 30%, rgba(102,205,170,1) 90%)',
-    icon: <SchoolIcon />,
-  },
-  {
-    title: "Sobre mí",
-    link: "/sobre-mi",
-    backgroundColor: 'linear-gradient(90deg, rgba(85,37,130,1) 0%, rgba(0,128,128,1) 100%)',
-    icon: <AboutMeIcon />,
-  }
-];
 
 export default HomePage;
