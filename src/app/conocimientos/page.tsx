@@ -15,38 +15,44 @@ const pageVariants = {
 
 export default function KnowledgePage() {
   return (
-    <PageTransition>
-      <section
-        id="knowledge"
-        data-section="knowledge"
-        className="relative flex flex-col h-screen dark max-w-2xl mx-auto pt-40"
-      >
+    <div className="min-h-screen">
+      <div className="h-[60px]">
         <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50">
           <Navbar />
         </div>
-        <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white ml-4">
-          <SchoolIcon />
-          Conocimientos
-        </h2>
-        <motion.section
-          id="knowledge"
-          data-section="knowledge"
-          initial="hidden"
-          animate="visible"
-          variants={pageVariants}
-        >
-          {KNOWLEDGE_STEPS.map((experience, index) => (
-            <div className="relative p-5" key={index}>
-              <ExperienceItem {...experience} />
-            </div>
-          ))}
-        </motion.section>
-        <br /><br />
-        <h2 className="flex items-center justify-center mb-6 text-2xl font-semibold gap-x-3 text-white ml-4">
-          Certificados
-        </h2>
-        <CertificationCard items={items} />
-      </section>
-    </PageTransition>
+      </div>
+      <PageTransition>
+        <main className="pt-[60px]">
+          <section
+            id="knowledge"
+            data-section="knowledge"
+            className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto"
+          >
+            <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white ml-4">
+              <SchoolIcon />
+              Conocimientos
+            </h2>
+            <motion.section
+              id="knowledge"
+              data-section="knowledge"
+              initial="hidden"
+              animate="visible"
+              variants={pageVariants}
+            >
+              {KNOWLEDGE_STEPS.map((experience, index) => (
+                <div className="relative p-5" key={index}>
+                  <ExperienceItem {...experience} />
+                </div>
+              ))}
+            </motion.section>
+            <br /><br />
+            <h2 className="flex items-center justify-center mb-6 text-2xl font-semibold gap-x-3 text-white ml-4">
+              Certificados
+            </h2>
+            <CertificationCard items={items} />
+          </section>
+        </main>
+      </PageTransition>
+    </div>
   );
 }
