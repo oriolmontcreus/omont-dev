@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "omont Portfolio",
-  description: "Portfolio of oriol mont creus",
+  title: "Portfolio de Oriol M.",
+  description: "Portafolio v1 de Oriol Mont Creus",
   icons: {
     icon: "/favicon.ico",
   },
