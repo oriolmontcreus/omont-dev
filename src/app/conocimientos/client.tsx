@@ -8,7 +8,7 @@ import Navbar from "../ui/navbar";
 
 const AnimatedContent = dynamic(() => import('./AnimatedContent'), { ssr: false });
 
-export default function ClientsideContent() {
+export default function ClientContent() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
