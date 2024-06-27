@@ -34,13 +34,15 @@ const ServerContent = () => (
         <CardContainer className="inter-var h-full">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
           <CardItem translateZ="100" className="w-full flex flex-col items-center justify-center">
-            <Image
-              src="/personal/oriolmontcreus.webp"
-              height="1000"
-              width="1000"
-              className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
-              alt="profile-picture"
-            />
+          <Image
+          src="/personal/oriolmontcreus.webp"
+          height={1000}
+          width={1000}
+          className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl"
+          alt="profile-picture"
+          priority={true}
+          placeholder="empty"
+        />
             <CardItem
               as="div"
               translateZ="60"
