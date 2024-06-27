@@ -6,7 +6,7 @@ import ExperienceIcon from "@icons/ExperienceIcon";
 import PageTransition from "../ui/PageTransition";
 import { DEVELOPER_EXPERIENCES, OTHER_EXPERIENCES } from "./content";
 
-const ServerContent = dynamic(() => import('./ServerContent'), { ssr: false });
+const ServerContent = dynamic(() => import('./server'), { ssr: false });
 
 const ClientsideContent = () => {
   const [isLoaded, setIsLoaded] = useState(false);

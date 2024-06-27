@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 
-const ClientsideContent = dynamic(() => import('./ClientsideContent'), { ssr: false });
+const ClientContent = dynamic(() => import('./client'), { ssr: false });
 
 export default function ExperiencePage() {
-  return <ClientsideContent />;
+  return <ClientContent />;
 }

@@ -6,7 +6,7 @@ import { KNOWLEDGE_STEPS, items } from "./content/content";
 import PageTransition from "../ui/PageTransition";
 import Navbar from "../ui/navbar";
 
-const AnimatedContent = dynamic(() => import('./AnimatedContent'), { ssr: false });
+const ServerContent = dynamic(() => import('./server'), { ssr: false });
 
 export default function ClientContent() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -34,7 +34,7 @@ export default function ClientContent() {
               Conocimientos
             </h2>
             {isLoaded && (
-              <AnimatedContent knowledgeSteps={KNOWLEDGE_STEPS} certificationItems={items} />
+              <ServerContent knowledgeSteps={KNOWLEDGE_STEPS} certificationItems={items} />
             )}
           </section>
         </main>

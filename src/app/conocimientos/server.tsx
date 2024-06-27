@@ -24,7 +24,7 @@ const itemVariants = {
   }
 };
 
-const AnimatedContent = ({ knowledgeSteps, certificationItems }: { knowledgeSteps: EducationItem[]; certificationItems: CertDefinition[] }) => (
+const ServerContent = ({ knowledgeSteps, certificationItems }: { knowledgeSteps: EducationItem[]; certificationItems: CertDefinition[] }) => (
   <AnimatePresence>
     <motion.section
       initial="hidden"
@@ -45,4 +45,4 @@ const AnimatedContent = ({ knowledgeSteps, certificationItems }: { knowledgeStep
     </motion.section>
   </AnimatePresence>
 );
-export default AnimatedContent;
+export default ServerContent;
