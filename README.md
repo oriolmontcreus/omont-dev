@@ -18,6 +18,9 @@ This portfolio is built using Next.js and styled with Tailwind CSS. It showcases
 - [Empezando](#empezando-)
 - [Credits](#créditoscredits-)
 
+[!WARNING]
+The development environment may differ significantly from the production environment. As this project supports both server-side and client-side rendering, you may experience slower performance or encounter bugs during development that are not present in the production version.
+
 ## English 🇬🇧
 
 ### Getting Started 🚀
