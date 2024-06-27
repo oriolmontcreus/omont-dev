@@ -17,9 +17,9 @@ const ClientContent = () => {
   return (
     <div className="min-h-screen">
       <div className="h-[60px]">
-        <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50">
-          <Navbar />
-        </div>
+      <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50 md:w-full w-[50%]">
+        <Navbar />
+      </div>
       </div>
       <PageTransition>
         <main className="pt-[60px]">
