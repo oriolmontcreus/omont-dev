@@ -29,7 +29,7 @@ const ServerContent = () => (
     animate="visible"
     variants={pageVariants}
   >
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="flex flex-wrap justify-center gap-4 mb-4">
       {projectsData.map((project, index) => (
         <motion.div key={index} variants={itemVariants}>
           <ProjectCard {...project} />
