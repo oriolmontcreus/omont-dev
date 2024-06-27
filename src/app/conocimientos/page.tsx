@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 
-const ClientSideContent = dynamic(() => import('./ClientSideContent'), { ssr: false });
+const ClientsideContent = dynamic(() => import('./ClientsideContent'), { ssr: false });
 
 export default function KnowledgePage() {
-  return <ClientSideContent />;
+  return <ClientsideContent />;
 }

@@ -1,14 +1,14 @@
 "use client"
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import SchoolIcon from "@icons/SchoolIcon";
-import { KNOWLEDGE_STEPS, items } from "./content/content";
-import PageTransition from "../ui/PageTransition";
 import Navbar from "../ui/navbar";
+import ExperienceIcon from "@icons/ExperienceIcon";
+import PageTransition from "../ui/PageTransition";
+import { DEVELOPER_EXPERIENCES, OTHER_EXPERIENCES } from "./content";
 
-const AnimatedContent = dynamic(() => import('./AnimatedContent'), { ssr: false });
+const ServerContent = dynamic(() => import('./ServerContent'), { ssr: false });
 
-export default function ClientsideContent() {
+const ClientsideContent = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
@@ -24,17 +24,16 @@ export default function ClientsideContent() {
       </div>
       <PageTransition>
         <main className="pt-[60px]">
-          <section
-            id="knowledge"
-            data-section="knowledge"
-            className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto"
-          >
+          <section id="experiencia" data-section="experiencia" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto">
             <h2 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-white ml-4">
-              <SchoolIcon />
-              Conocimientos
+              <ExperienceIcon />
+              Experiencia laboral
             </h2>
             {isLoaded && (
-              <AnimatedContent knowledgeSteps={KNOWLEDGE_STEPS} certificationItems={items} />
+              <ServerContent 
+                developerExperiences={DEVELOPER_EXPERIENCES}
+                otherExperiences={OTHER_EXPERIENCES}
+              />
             )}
           </section>
         </main>
@@ -42,3 +41,5 @@ export default function ClientsideContent() {
     </div>
   );
 }
+
+export default ClientsideContent;

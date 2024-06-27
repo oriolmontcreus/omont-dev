@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-interface Props {
+export type ExperienceItemDefinition = {
     title: string;
     description: string;
     date: string;
@@ -10,7 +10,7 @@ interface Props {
     hideTimeline?: boolean;
 }
 
-const ExperienceItem: React.FC<Props> = ({ title, description, date, imageUrl, isHeadItem = false, hideTimeline = false }) => {
+const ExperienceItem: React.FC<ExperienceItemDefinition> = ({ title, description, date, imageUrl, isHeadItem = false, hideTimeline = false }) => {
     return (
         <div className="flex flex-col">
             <div className="flex">
