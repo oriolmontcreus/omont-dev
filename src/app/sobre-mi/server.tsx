@@ -22,7 +22,7 @@ const ServerContent = () => (
       <div className="w-full md:w-1/2 p-4 pt-0">
         <div className="space-y-4">
           <p className="leading-relaxed">
-            Mi nombre es <strong className="text-yellow-500"> Oriol Mont</strong>, un joven de 19 años originario de Girona. Soy un <strong className="text-yellow-500">Desarrollador de Software</strong> y en la actualidad, estoy ampliando mis habilidades técnicas aprendiendo nuevos frameworks web, incluyendo <strong className="text-yellow-500">Angular, Laravel, Astro y Blazor</strong>.
+            Soy <strong className="text-yellow-500"> Oriol Mont Creus</strong>, un apasionado <strong className="text-yellow-500">Desarrollador de Software </strong> de 20 años. Actualmente, estoy trabajando y ampliado mis habilidades técnicas, especialmente en nuevos frameworks web y otras tecnologías emergentes en mi tiempo libre
           </p>
           <p className="leading-relaxed">
             Mi pasión radica en optimizar el rendimiento y la estética de las aplicaciones web para proporcionar la <strong className="text-yellow-500">mejor experiencia al usuario</strong>. Creo firmemente en la importancia de un <strong className="text-yellow-500">diseño intuitivo</strong> y una <strong className="text-yellow-500">interacción fluida</strong> para el éxito de cualquier proyecto web.
