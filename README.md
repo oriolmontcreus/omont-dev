@@ -18,6 +18,9 @@ This portfolio is built using Next.js and styled with Tailwind CSS. It showcases
 - [Empezando](#empezando-)
 - [Credits](#créditoscredits-)
 
+> [!WARNING]
+> The development environment may differ significantly from the production environment. As this project supports both server-side and client-side rendering, you may experience slower performance or encounter bugs during development that are not present in the production version.
+
 ## English 🇬🇧
 
 ### Getting Started 🚀
@@ -35,8 +38,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
@@ -64,8 +65,6 @@ bun dev
 ```
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
-
-Puedes comenzar a editar la página modificando `app/page.tsx`. La página se actualiza automáticamente a medida que editas el archivo.
 
 Este proyecto utiliza [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) para optimizar y cargar automáticamente Inter, una fuente personalizada de Google Font.
 
