@@ -15,11 +15,9 @@ const ClientContent = () => {
   }, []);
 
   return (
-    <div className="min-h-screen">
-      <div className="h-[60px]">
-      <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50 md:w-full w-[50%]">
-          <Navbar />
-        </div>
+    <div className="min-h-screen pt-[60px]">
+      <div className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 md:w-full w-full">
+        <Navbar />
       </div>
       <PageTransition>
         <main className="pt-[60px]">
