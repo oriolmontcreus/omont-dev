@@ -1,5 +1,19 @@
 export const projectsData = [
     {
+        image: "/projects/liquideath.webp",
+        title: "Liquid Death",
+        description: "Landing page inspirada en la empresa Liquid Death.",
+        githubUrl: "https://github.com/oriolmontcreus/liquideath",
+        previewUrl: "https://liquideath-omc.vercel.app/"
+    },
+    {
+        image: "/projects/armify.webp",
+        title: "Armify",
+        description: "Landing page sobre Armify, una empresa inventada sobre brazos industriales.",
+        githubUrl: "https://github.com/oriolmontcreus/armify-landing",
+        previewUrl: "https://armify.vercel.app/"
+    },
+    {
         image: "/projects/vistaqs.webp",
         title: "VistaQs",
         description: "Gestión eficiente de encuestas con creación, distribución y análisis.",
