@@ -16,7 +16,7 @@ export const CertificationCard = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-2 gap-4 py-10 w-full",
+        "grid grid-cols-1 sm:grid-cols-2 gap-4 py-10 w-full",
         className
       )}
     >
