@@ -18,9 +18,9 @@ const ServerContent = () => (
     animate="visible"
     variants={pageVariants}
   >
-    <div className="flex flex-col md:flex-row justify-between items-start">
-      <div className="w-full md:w-1/2 p-4 pt-0">
-        <div className="space-y-4">
+    <div className="flex flex-col md:flex-row justify-between items-start px-6">
+      <div className="w-full md:w-1/2 pt-0">
+        <div className="space-y-4 pb-4">
           <p className="leading-relaxed">
             Soy <strong className="text-yellow-500"> Oriol Mont Creus</strong>, un apasionado <strong className="text-yellow-500">Desarrollador de Software </strong> de 20 años. Actualmente, estoy trabajando y ampliado mis habilidades técnicas, especialmente en nuevos frameworks web y otras tecnologías emergentes en mi tiempo libre.
           </p>
@@ -30,9 +30,9 @@ const ServerContent = () => (
         </div>
       </div>
 
-      <div className="relative md:absolute right-0 w-full md:w-1/2 h-full">
+      <div className="relative md:absolute right-0 md:w-1/2 h-full m-auto">
         <CardContainer className="inter-var h-full">
-          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+          <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto w-full rounded-xl p-6 border">
           <CardItem translateZ="100" className="w-full flex flex-col items-center justify-center">
           <Image
           src="/personal/oriolmontcreus.webp"
@@ -46,7 +46,7 @@ const ServerContent = () => (
             <CardItem
               as="div"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-60 mt-2 dark:text-neutral-300"
+              className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
             >
               <ul className="list-disc list-inside space-y-2">
                 <li>🚹 Oriol Mont Creus</li>

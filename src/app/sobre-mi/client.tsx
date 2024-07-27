@@ -28,8 +28,8 @@ const ClientContent = () => {
             </h2>
             {isLoaded && <ServerContent />}
           </section>
-          <section id="technologies" className="relative flex flex-col min-h-screen dark max-w-2xl mx-auto mt-40 p-4 space-y-4">
-            <div className="bg-gray-50 relative group dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
+          <section id="technologies" className="relative flex flex-col min-h-screen dark max-w-[350px] md:max-w-2xl mx-auto mt-40 space-y-4">
+            <div className="bg-gray-50 relative group dark:bg-black dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border">
               <h2 className="flex justify-center mb-6 text-2xl font-semibold gap-x-3 text-white">
                 Tecnologías de Frontend
               </h2>
